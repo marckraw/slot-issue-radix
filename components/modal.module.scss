@@ -1,0 +1,41 @@
+@keyframes animation-name{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modalOverlay {
+  background-color: rgba(black, 0.3);
+  position: fixed;
+  inset: 0;
+  animation: animation-name 0.3s ease-out;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 16px);
+  max-width: 450px;
+  max-height: calc(100vh - 116px);
+  padding: 48px 24px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.modalFooter {
+
+}
+
+.modalHeader {
+
+}
+
